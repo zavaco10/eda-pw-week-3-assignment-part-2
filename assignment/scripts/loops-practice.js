@@ -7,7 +7,7 @@ console.log('---- 1. For loops ----');
 console.log('count from 0 to 3');
 // start i at 0, while i is < 4 do code between {}, afterwards add 1 to i (i++)
 for (let i = 0; i < 4; i++){
-console.log('in a for loop. i:', i )
+console.log('count from 0 to 3. i:', i );
 }
 
 
@@ -49,17 +49,33 @@ console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-console.log('Some stars:');
-
+for (let i of stars) {
+  console.log(i);
+}
+console.log('Some stars!');
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
+let i = 0;
+while (i < stars.length) {
+  console.log(stars[i]);
+  i++;
+}
 console.log('Some stars using while:');
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
+let zeroToFive = 0;
+while (zeroToFive <= 5) {
+  console.log(zeroToFive); zeroToFive++;
+}
 console.log('count from 0 to 5');
 
+
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
+let tenToFive = 10; 
+while (tenToFive >=5) {
+  console.log(tenToFive); tenToFive--;
+}
 console.log('count backwards from 10 to 5');
